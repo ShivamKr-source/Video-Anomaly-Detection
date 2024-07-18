@@ -15,7 +15,7 @@ from torch.utils.data import DataLoader
 from data_loader import VideoIter
 from network.TorchUtils import get_torch_device
 from utils.load_model import load_feature_extractor
-from utils.utils import build_transforms, register_logger
+from utils.utils_ import build_transforms, register_logger
 
 
 def get_args() -> argparse.Namespace:

@@ -11,7 +11,7 @@ from torch.optim import Optimizer
 from torch.utils.data import DataLoader
 
 from utils.callbacks import Callback
-from utils.types import Device
+from utils.custom_types import Device
 
 
 def get_torch_device() -> Device:

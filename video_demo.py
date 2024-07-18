@@ -28,7 +28,7 @@ from PyQt5.QtWidgets import (
     QStyle,
     QWidget,
 )
-from torch import Tensor
+from torch import DoubleTensor, Tensor
 from tqdm import tqdm
 
 from data_loader import SingleVideoIter
@@ -36,8 +36,8 @@ from feature_extractor import read_features, to_segments
 from network.anomaly_detector_model import AnomalyDetector
 from network.TorchUtils import get_torch_device
 from utils.load_model import load_models
-from utils.types import Device, FeatureExtractor
-from utils.utils import build_transforms
+from utils.custom_types import Device, FeatureExtractor
+from utils.utils_ import build_transforms
 
 APP_NAME = "Anomaly Media Player"
 

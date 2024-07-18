@@ -85,3 +85,21 @@ def build_transforms(mode: str = "c3d") -> transforms.Compose:
         )
 
     return res
+
+import torch
+
+def get_torch_device():
+    """
+    Returns the best available device for PyTorch (GPU if available, otherwise CPU).
+    """
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        print(f"Using GPU: {torch.cuda.get_device_name(0)}")
+    else:
+        device = torch.device("cpu")
+        print("Using CPU")
+    return device
+
+# Example usage
+device = get_torch_device()
+

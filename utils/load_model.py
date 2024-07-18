@@ -11,7 +11,7 @@ from network.c3d import C3D
 from network.MFNET import MFNET_3D
 from network.resnet import generate_model
 from network.TorchUtils import TorchModel
-from utils.types import Device, FeatureExtractor
+from utils.custom_types import Device, FeatureExtractor
 
 
 def load_feature_extractor(
